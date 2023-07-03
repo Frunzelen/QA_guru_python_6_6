@@ -104,6 +104,8 @@ def rename_func(func, *args):
     changed_func = func.__name__.replace('_', ' ').title()
     changed_args = ', '.join([*args])
     result = f"{changed_func} [{changed_args}]"
+
+    print(result)
     return result
 
 
